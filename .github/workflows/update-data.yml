@@ -1,0 +1,23 @@
+name: update-data
+on:
+  schedule:
+    - cron: "30 21 * * 1-5"   # 21:30 UTC, after US close (also winter: close is 21:00 UTC)
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install yfinance pandas numpy lxml
+      - run: python scripts/build_screen.py
+      - name: Commit data
+        run: |
+          git config user.name "data-bot"
+          git config user.email "data-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || (git commit -m "data update $(date -u +%F)" && git push)
