@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-26T03:42:12Z",
+ "generated_utc": "2026-11-27T03:42:37Z",
  "data_date": "2026-11-25",
  "universe_size": 500,
  "regime": {
@@ -16,10 +16,10 @@
    "roc20": -12.63
   },
   "^VIX": {
-   "close": 28.29,
-   "sma200": 18.78,
+   "close": 26.8,
+   "sma200": 18.82,
    "above_sma200": true,
-   "roc20": 67.3
+   "roc20": 55.81
   }
  },
  "breadth": {
@@ -41,7 +41,7 @@
    "atr14": 17.03,
    "low_20d": 477.39,
    "high_52w": 558.07,
-   "avg_dollar_vol": 13118527500,
+   "avg_dollar_vol": 13118781284,
    "above_sma200": true,
    "sma200_rising": true,
    "roc_reset": true,
@@ -141,7 +141,7 @@
    "atr14": 0.64,
    "low_20d": 27.31,
    "high_52w": 30.99,
-   "avg_dollar_vol": 968958632,
+   "avg_dollar_vol": 968979806,
    "above_sma200": true,
    "sma200_rising": true,
    "roc_reset": true,
@@ -1083,7 +1083,7 @@
    "atr14": 1.22,
    "low_20d": 26.96,
    "high_52w": 36.23,
-   "avg_dollar_vol": 436314575,
+   "avg_dollar_vol": 436337190,
    "above_sma200": true,
    "sma200_rising": true,
    "roc_reset": false,
@@ -1163,7 +1163,7 @@
    "atr14": 19.84,
    "low_20d": 301.28,
    "high_52w": 432.33,
-   "avg_dollar_vol": 2415884997,
+   "avg_dollar_vol": 2416122186,
    "above_sma200": true,
    "sma200_rising": true,
    "roc_reset": false,
